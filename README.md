@@ -1,45 +1,154 @@
-# TicTacToe
-A fully interactive two-player Tic-Tac-Toe game in Bash for the Linux terminal. Features colorful dialogs, player name input, automatic win/draw detection, scoring, and replay options. A fun, nostalgic game showcasing practical shell scripting, dependency management, and smooth user interaction.
+# TicTacToe (Terminal • Bash • Dockerized)
 
-# Terminal Tic-Tac-Toe Game
-A classic two-player Tic-Tac-Toe game written in Bash script, designed for play in the Linux terminal. This project uses `dialog` for interactive UI elements and `figlet` for styled banners, providing an engaging and nostalgic experience!
+A fully interactive **two-player Tic-Tac-Toe game** written in **Bash** for the Linux terminal.  
+It features colorful dialogs, player name input, automatic win/draw detection, scoring, replay options — and is now **fully containerized** using Docker / Podman.
+
+A fun, nostalgic CLI project that showcases **shell scripting, dependency management, and containerization**.
+
+---
+
+## Terminal Tic-Tac-Toe Game
+
+This is a classic **two-player Tic-Tac-Toe** game designed for terminal play on Linux systems.  
+It uses:
+
+- `dialog` for interactive, colorized UI windows  
+- `figlet` for styled ASCII banners  
+
+The result is an engaging terminal experience with smooth user interaction.
+
+---
 
 ## Features
 
 - Two-player mode with custom player name prompts
-- Interactive, colorized board using dialog windows
+- Interactive, colorized board using `dialog`
+- ASCII art banners using `figlet`
 - Automatic win and draw detection
-- Score tracking and replay option
-- Handles graceful exits and interruptions
+- Score tracking with replay option
+- Graceful exit and interruption handling
 - Dependency checks for missing tools
+- Fully Dockerized (works with Docker & Podman)
 
-## Dependencies
+---
 
-- `bash` (typically pre-installed)
-- `dialog` (install with `sudo apt install dialog`)
-- `figlet` (install with `sudo apt install figlet`)
+## Tech Stack
+
+- **Language:** Bash (Shell Script)
+- **UI Tools:** dialog, figlet
+- **Containerization:** Docker (OCI compatible with Podman)
+- **Platform:** Linux (tested on Fedora & Ubuntu)
+
+---
+
+## Run Using Docker (Recommended)
+
+No local dependencies needed.
+
+### Using Docker
+```bash
+docker run -it tictactoe
+```
+
+### Using Podman
+```bash
+podman run -it tictactoe
+```
+
+---
+
+## Run Locally (Without Docker)
+
+### Dependencies
+- bash (usually pre-installed)
+- dialog
+- figlet
+
+### Install on Fedora / RHEL / RPM-based
+```bash
+sudo dnf install dialog figlet
+```
+
+### Install on Ubuntu / Debian
+```bash
+sudo apt install dialog figlet
+```
+
+---
 
 ## Usage
 
-1. Clone or download the script to your local Linux machine:
-git clone https://github.com/MankooAniket/TicTacToe/
+1. Clone the repository:
+```bash
+git clone https://github.com/MankooAniket/TicTacToe.git
+cd TicTacToe
+```
 
-2. Install required packages if missing:
-sudo apt install dialog figlet
-
-
-3. Run the script in your terminal:
+2. Run the script:
+```bash
 bash ticTacToe2.sh
+```
 
+3. Follow the on-screen prompts to:
+- Enter player names
+- Take turns
+- View scores and replay games
 
-4. Follow the on-screen prompts to enter player names and take turns. The game provides instructions and tracks scores automatically.
+---
+
+##  Build the Docker Image Yourself
+```bash
+git clone https://github.com/MankooAniket/TicTacToe.git
+cd TicTacToe
+docker build -t tictactoe .
+docker run -it tictactoe
+```
+
+> The same commands work with **Podman** on Fedora.
+
+---
 
 ## Game Rules
 
-- The game is played on a 3x3 grid.
-- Players take turns to place their symbol (X or O) in empty cells.
-- The first to get three of their symbols in a row (vertically, horizontally, or diagonally) wins.
-- If all cells are filled and there is no winner, the game ends in a draw.
+- The game is played on a 3×3 grid
+- Players alternate placing X and O
+- The first player to align three symbols:
+    - Horizontally
+    - Vertically
+    - Diagonally
+wins
 
-Enjoy a nostalgic round of Tic-Tac-Toe and explore Bash scripting with this interactive project!
+- If all cells are filled without a winner → Draw
+
+---
+
+## Why This Project?
+
+- Demonstrates practical Bash scripting
+- Shows interactive CLI UI design
+- Handles dependencies cleanly
+- Demonstrates Docker & Podman containerization
+- Great showcase project for:
+    - Linux
+    - DevOps
+    - Backend / System roles
+
+---
+
+## Future Improvements
+
+- Single-player mode (AI opponent)
+- Configurable board size
+- Sound effects (terminal bell)
+- CI pipeline for automatic Docker builds
+
+---
+
+## Author
+
+Aniket Mankoo
+GitHub: https://github.com/MankooAniket
+LinkedIn: https://linkedin.com/in/mankooaniket
+
+If you enjoyed this project, consider starring the repository!
 

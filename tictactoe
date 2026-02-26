@@ -1,13 +1,22 @@
 #!/bin/bash
 
-# Check if dialog is installed
-if ! command -v dialog &> /dev/null; then
-    echo "This script requires 'dialog'. Install it using 'sudo apt install dialog'."
-    exit 1
-fi
-# Check if figlet is installed
-if ! command -v figlet &> /dev/null; then
-    echo "This script requires 'figlet'. Install it using 'sudo apt install figlet'."
+# Check if dependencies are installed
+get_install_hint() {
+    if command -v dnf &>/dev/null; then
+        echo "sudo dnf install dialog figlet"
+    elif command -v apt &>/dev/null; then
+        echo "sudo apt install dialog figlet"
+    elif command -v pacman &>/dev/null; then
+        echo "sudo pacman -S dialog figlet"
+    else
+        echo "Please install 'dialog' and 'figlet' using your system package manager."
+    fi
+}
+
+if ! command -v dialog &> /dev/null || ! command -v figlet &> /dev/null; then
+    echo "Missing required dependencies."
+    echo "Install them using:"
+    get_install_hint
     exit 1
 fi
 
