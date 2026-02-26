@@ -146,8 +146,8 @@ wins
 
 ## Author
 
-Aniket Mankoo
-GitHub: https://github.com/MankooAniket
+Aniket Mankoo<br>
+GitHub: https://github.com/MankooAniket<br>
 LinkedIn: https://linkedin.com/in/mankooaniket
 
 If you enjoyed this project, consider starring the repository!
