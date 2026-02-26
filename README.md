@@ -43,16 +43,18 @@ The result is an engaging terminal experience with smooth user interaction.
 
 ## Run Using Docker (Recommended)
 
+> Image available on Docker Hub: `mankooaniket/tictactoe:v1.0.0`
+
 No local dependencies needed.
 
 ### Using Docker
 ```bash
-docker run -it tictactoe
+docker run -it mankooaniket/tictactoe:v1.0.0
 ```
 
 ### Using Podman
 ```bash
-podman run -it tictactoe
+podman run -it mankooaniket/tictactoe:v1.0.0
 ```
 
 ---
@@ -141,6 +143,12 @@ wins
 - Configurable board size
 - Sound effects (terminal bell)
 - CI pipeline for automatic Docker builds
+
+---
+
+## License
+
+This project is licensed under the MIT License.
 
 ---
 
