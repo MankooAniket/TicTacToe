@@ -1,3 +1,6 @@
+![Bash](https://img.shields.io/badge/Bash-Scripting-green)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 # TicTacToe (Terminal • Bash • Dockerized)
 
 A fully interactive **two-player Tic-Tac-Toe game** written in **Bash** for the Linux terminal.  
