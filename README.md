@@ -29,6 +29,7 @@ This project showcases **shell scripting, CLI interaction design, dependency han
 - Graceful exit and interruption handling
 - Dependency checks for missing tools
 - Fully containerized with Docker (OCI compatible with Podman)
+- Automated Docker image build & deployment using GitHub Actions (CI/CD)
 ---
 
 ## Tech Stack
