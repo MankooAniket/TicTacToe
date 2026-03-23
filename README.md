@@ -3,22 +3,16 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 # TicTacToe (Terminal • Bash • Dockerized)
 
-A fully interactive **two-player Tic-Tac-Toe game** written in **Bash** for the Linux terminal.  
-It features colorful dialogs, player name input, automatic win/draw detection, scoring, replay options — and is now **fully containerized** using Docker / Podman.
+A fully interactive **two-player Tic-Tac-Toe game** built using **Bash scripting** for the Linux terminal.  
+It features a colorful CLI interface, smooth gameplay, and is fully containerized using **Docker / Podman**.
 
-A fun, nostalgic CLI project that showcases **shell scripting, dependency management, and containerization**.
+This project showcases **shell scripting, CLI interaction design, dependency handling, and containerization**.
 
 ---
 
-## Terminal Tic-Tac-Toe Game
+## Demo
 
-This is a classic **two-player Tic-Tac-Toe** game designed for terminal play on Linux systems.  
-It uses:
-
-- `dialog` for interactive, colorized UI windows  
-- `figlet` for styled ASCII banners  
-
-The result is an engaging terminal experience with smooth user interaction.
+[![asciicast](https://asciinema.org/a/861898.svg)](https://asciinema.org/a/861898)
 
 ---
 
@@ -31,7 +25,7 @@ The result is an engaging terminal experience with smooth user interaction.
 - Score tracking with replay option
 - Graceful exit and interruption handling
 - Dependency checks for missing tools
-- Fully Dockerized (works with Docker & Podman)
+- Fully Dockerized (Docker & Podman Support)
 
 ---
 
@@ -113,6 +107,18 @@ docker run -it tictactoe
 
 ---
 
+## Project Structure
+
+```bash
+.
+├── ticTacToe.sh
+├── Dockerfile
+├── LICENSE
+└── README.md
+```
+
+---
+
 ## Game Rules
 
 - The game is played on a 3×3 grid
@@ -157,7 +163,7 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Aniket Mankoo<br>
+**Aniket Mankoo**<br>
 GitHub: https://github.com/MankooAniket<br>
 LinkedIn: https://linkedin.com/in/mankooaniket
 
