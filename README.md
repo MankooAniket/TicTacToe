@@ -1,7 +1,7 @@
 ![Bash](https://img.shields.io/badge/Bash-Scripting-green)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-# TicTacToe (Terminal • Bash • Dockerized)
+# TicTacToe CLI (Bash • Dockerized)
 
 A fully interactive **two-player Tic-Tac-Toe game** built using **Bash scripting** for the Linux terminal.  
 It features a colorful CLI interface, smooth gameplay, and is fully containerized using **Docker / Podman**.
@@ -11,6 +11,8 @@ This project showcases **shell scripting, CLI interaction design, dependency han
 ---
 
 ## Demo
+
+> Interactive terminal gameplay (Dockerized execution)
 
 [![asciicast](https://asciinema.org/a/861898.svg)](https://asciinema.org/a/861898)
 
@@ -25,8 +27,7 @@ This project showcases **shell scripting, CLI interaction design, dependency han
 - Score tracking with replay option
 - Graceful exit and interruption handling
 - Dependency checks for missing tools
-- Fully Dockerized (Docker & Podman Support)
-
+- Fully containerized with Docker (OCI compatible with Podman)
 ---
 
 ## Tech Stack
@@ -38,11 +39,19 @@ This project showcases **shell scripting, CLI interaction design, dependency han
 
 ---
 
+## Key Concepts Demonstrated
+
+- Shell scripting & process flow control  
+- CLI-based user interaction design  
+- Dependency handling in Linux environments  
+- Containerization & reproducible environments using Docker
+  
+---
+
 ## Run Using Docker (Recommended)
 
 > Image available on Docker Hub: `mankooaniket/tictactoe:v1.0.0`
-
-No local dependencies needed.
+> Runs in an isolated container with all dependencies pre-configured
 
 ### Using Docker
 ```bash
