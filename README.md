@@ -1,6 +1,7 @@
 ![Bash](https://img.shields.io/badge/Bash-Scripting-green)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+![CI](https://github.com/YOUR_USERNAME/TicTacToe/actions/workflows/docker.yml/badge.svg)
 # TicTacToe CLI (Bash • Dockerized)
 
 A fully interactive **two-player Tic-Tac-Toe game** built using **Bash scripting** for the Linux terminal.  
